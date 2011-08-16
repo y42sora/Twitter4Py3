@@ -33,8 +33,3 @@ class Pytwi(object):
     
 
 
-if __name__ == "__main__":
-    auth = Auth.TwitterOAuthHandler(twitterConfig.CONSUMER_KEY, twitterConfig.CONSUMER_SECRET)
-    auth.setAccessToken(twitterConfigAccessToken.ACCESS_TOKEN, twitterConfigAccessToken.ACCESS_TOKEN_SECRET)
-    rest = Pytwi.getRestAPI(auth)
-    rest.publicTimeline()
